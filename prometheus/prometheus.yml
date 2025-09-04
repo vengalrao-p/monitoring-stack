@@ -1,0 +1,31 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  # Dev Environment
+  - job_name: 'node_exporter_dev_1'
+    scheme: https
+    metrics_path: /nodeexporter/metrics
+    static_configs:
+      - targets: ['demo.yourdomain.com']
+        labels:
+          env: dev
+
+  - job_name: 'node_exporter_dev_2'
+    scheme: https
+    metrics_path: /nodeexporter/metrics
+    static_configs:
+      - targets: ['test.yourdomain.com']
+        labels:
+          env: dev
+
+  # Prod Environment
+  - job_name: 'node_exporter_prod'
+    scheme: https
+    metrics_path: /nodeexporter/metrics
+    static_configs:
+      - targets: ['api.yourdomain.com']
+        labels:
+          env: prod
+
