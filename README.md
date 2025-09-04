@@ -81,6 +81,6 @@ Email notifications via Alertmanager
 Ready-to-use Grafana dashboards
 
 📧 Maintainer
-Name: Your Name
+Name: Vengalarao Pasala
 
-Email: youremail@example.com
+Email: vengaldevops7@gmail.com
