@@ -26,7 +26,7 @@ A complete monitoring stack for metrics, logs, and alerts using **Prometheus**, 
 1. Clone repository:
 
 ```bash
-git clone git@github.com:yourusername/monitoring-stack.git
+git clone git@github.com:vengalrao-p/monitoring-stack.git
 cd monitoring-stack
 Edit configurations (replace placeholders):
 
